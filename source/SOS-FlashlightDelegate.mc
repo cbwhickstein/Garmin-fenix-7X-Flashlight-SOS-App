@@ -15,12 +15,24 @@ class SOS_FlashlightDelegate extends WatchUi.BehaviorDelegate {
         timer = new Timer.Timer();
     }
 
-    function onMenu() as Boolean {
-        WatchUi.pushView(new Rez.Menus.MainMenu(), new SOS_FlashlightMenuDelegate(), WatchUi.SLIDE_UP);
+    public function onTap(evt as ClickEvent) as Boolean {
+        if (Attention has :setFlashlightMode) {
+            if (light_on) {
+                light_on = false;
+                timer.stop();
+                Attention.setFlashlightMode(Attention.FLASHLIGHT_MODE_OFF, {:color => Attention.FLASHLIGHT_COLOR_WHITE});
+            } else {
+                light_on = true;
+                counter = 0;
+                ditStart();
+            }
+
+        }
         return true;
     }
 
-    
+    //Helper Functions
+
     function ditStart() as Void {
         counter++;
         Attention.setFlashlightMode(Attention.FLASHLIGHT_MODE_ON, {:color => Attention.FLASHLIGHT_COLOR_WHITE});
@@ -55,23 +67,6 @@ class SOS_FlashlightDelegate extends WatchUi.BehaviorDelegate {
         } else {
             timer.start(method(:dahStart), 1200/divider, false);
         }
-    }
-
-
-
-    public function onTap(evt as ClickEvent) as Boolean {
-        if (Attention has :setFlashlightMode) {
-            if (light_on) {
-                light_on = false;
-                timer.stop();
-                Attention.setFlashlightMode(Attention.FLASHLIGHT_MODE_OFF, {:color => Attention.FLASHLIGHT_COLOR_WHITE});
-            } else {
-                light_on = true;
-                ditStart();
-            }
-
-        }
-        return true;
     }
 
 
