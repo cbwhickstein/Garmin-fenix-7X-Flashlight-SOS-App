@@ -31,7 +31,7 @@ module Rez {
 _home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_bin_gen_006_B4374_00_source_Rez_mcgen_13_74_17_8_start:
 [ "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/bin/gen/006-B4374-00/source/Rez.mcgen" 14 12 ]
             [ "_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_bin_gen_006_B4374_00_source_Rez_mcgen_13_74_17_8_start" "_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_bin_gen_006_B4374_00_source_Rez_mcgen_13_74_17_8_stop" ]
-            %rez_cmp_local_text_1953996857.1 = local;
+            %rez_cmp_local_text_1397007838.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -76,10 +76,10 @@ _home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_bin_gen_006_B4374
             %tmp.50 = dup %tmp.45;
             %tmp.51 = aputv %tmp.50 %tmp.47 %tmp.49;
             %tmp.1 = newc %tmp.4 (%tmp.51);
-            lputv %rez_cmp_local_text_1953996857.1 %tmp.1;
+            lputv %rez_cmp_local_text_1397007838.1 %tmp.1;
 [ "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/bin/gen/006-B4374-00/source/Rez.mcgen" 16 12 ]
             %tmp.52 = newa 1 Array<WatchUi.Drawable>;
-            %tmp.54 = lgetv %rez_cmp_local_text_1953996857.1;
+            %tmp.54 = lgetv %rez_cmp_local_text_1397007838.1;
             %tmp.55 = dup %tmp.52;
             %tmp.56 = aputv %tmp.55 0 %tmp.54;
             ret %tmp.56;

@@ -7,7 +7,7 @@ class SOS_FlashlightDelegate extends WatchUi.BehaviorDelegate {
     public var light_on = false;
     var timer;
     var counter = 0;
-    var divider = 4;
+    var divider = 5;
     
 
     function initialize() {

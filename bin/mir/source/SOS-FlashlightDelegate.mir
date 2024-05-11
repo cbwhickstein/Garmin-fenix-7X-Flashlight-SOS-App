@@ -21,7 +21,7 @@ class SOS_FlashlightDelegate extends WatchUi.BehaviorDelegate{
     [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightDelegate.mc"; @line = 9; @position = 8; ]
     var counter = 0;
     [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightDelegate.mc"; @line = 10; @position = 8; ]
-    var divider = 4;
+    var divider = 5;
     [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightDelegate.mc"; @line = 13; ]
     function initialize() as Void {
 _home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightDelegate_mc_13_26_16_4_start:
