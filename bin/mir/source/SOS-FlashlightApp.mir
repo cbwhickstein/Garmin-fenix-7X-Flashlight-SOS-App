@@ -1,0 +1,61 @@
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 5; ]
+class SOS_FlashlightApp extends Application.AppBase{
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 7; ]
+    function initialize() as Void {
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_7_26_9_4_start:
+[ "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_20_68_22_4_start:
+[ "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc" 21 8 ]
+        %tmp.1 = newa 2;
+        %tmp.5 = getv ? :SOS_FlashlightView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        %tmp.11 = getv ? :SOS_FlashlightDelegate;
+        %tmp.8 = newc %tmp.11 ();
+        %tmp.12 = dup %tmp.7;
+        %tmp.13 = aputv %tmp.12 1 %tmp.8;
+        ret %tmp.13;
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_20_68_22_4_stop:
+    }
+}
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 26; ]
+function getApp() as SOS_FlashlightApp {
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_26_39_28_0_start:
+[ "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc" 27 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 SOS_FlashlightApp;
+    ret %tmp.4;
+_home_christian_Projects_current_garmin_sos_app_SOS_Flashlight_source_SOS_FlashlightApp_mc_26_39_28_0_stop:
+}
+[ @file = "/home/christian/Projects/current/garmin_sos_app/SOS-Flashlight/source/SOS-FlashlightApp.mc"; @line = 1; ]
+<init> {
+}
